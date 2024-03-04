@@ -1,8 +1,8 @@
 {
-	"name": "kedaireka backend",
+	"name": "be",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"build": "tsc",
 		"start": "tsc && node ./build/app.js",

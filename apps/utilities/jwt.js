@@ -7,7 +7,7 @@ exports.verifyAccessToken = exports.generateAccessToken = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const configs_1 = require("../configs");
 const generateAccessToken = (userId) => {
-    return jsonwebtoken_1.default.sign(userId, configs_1.CONFIG.secret.token ?? '', { expiresIn: '3600s' });
+    return jsonwebtoken_1.default.sign(userId, configs_1.CONFIG.secret.token ?? '');
 };
 exports.generateAccessToken = generateAccessToken;
 const verifyAccessToken = (token) => {
